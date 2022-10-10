@@ -1,0 +1,504 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    width: 100%;
+}
+h1{
+    margin: 0;
+    color: #c98f5f;
+    letter-spacing: 3px;
+    padding-bottom:  15px; 
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
+}
+p{
+    margin: 0;
+    font-size: 1.25rem;
+    color: rgb(247, 247, 247);  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+}
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h4{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(247, 247, 247);
+    
+}
+
+.brand-logo{
+    width: 150px;
+    height: 150px;
+}
+
+.nav-links ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    padding: 3rem;  
+}
+.nav-links a{
+    text-decoration: none;
+    color: #456dbd;
+    padding-left: 3px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.nav-links i{
+    transform: translateY(-2px);
+    color: #456dbd;
+}
+.nav-links li:hover>i{
+    color: #c98f5f;
+}
+.nav-links li:hover>a{
+    color: #c98f5f;
+}
+
+.hamburger{
+    position: absolute;
+    right: 10%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    
+}
+.bar{
+    background-color:#456dbd;
+    width: 100%;
+    height: 3px;
+    border-radius: 1rem;
+}
+
+.hamburger:hover> .bar{
+    background-color: #c98f5f ;
+}
+
+ #company-title{
+    
+    background-image: url(pexels-sevenstorm-juhaszimrus-443378.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+    -webkit-background-size:cover;
+    background-position:center;
+    background-color: rgb(84, 84, 84);
+    background-blend-mode: multiply;
+   
+    
+ }
+
+ .bg-image-text{
+    text-align: center; 
+    font-weight: bold;
+    padding-top: 15% ;
+    padding-bottom: 15%;
+ }
+
+#about{
+    background-color:rgb(247, 247, 247) ;
+    padding-top: 5%;
+    text-align: left;
+    padding-left:  10%;
+    padding-right: 10%;
+}
+#about span {
+    display: block;
+    border-top:solid 3px #c98f5f;
+    border-radius: 8px;
+    width: 30%;
+    height: 3px;
+    margin-left: 35% ;
+    
+}
+
+#about p{
+    color: black;
+    font-size: 1rem;
+}
+#about div{
+    text-align:justify;
+    padding: 10px 15%;
+}
+#about h1{
+    display: inline-block;
+    border-style:none none solid solid ;
+    border-width: 3px;
+}
+.sec-container{
+    display: flex;
+    flex-direction: row;
+}
+.sec-container img{
+    width: 40%;
+    height: 30%;
+}
+
+#about .sec-container div{
+    background-color: #c98f5f;
+    padding: 10px 1%;
+}
+
+#working{
+    padding-top: 5%;
+    padding-left:  10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+#working h1{
+    display: inline-block;
+    border-style:none none solid solid ;
+    border-width: 3px;
+}
+#working p{
+    color: black;
+    font-size: 1rem;
+    padding: 2% 8%;
+    text-align: center;
+}
+#working  a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #c98f5f;
+    display: inline-block;
+    border-style:none none solid solid ;
+    border-width: 3px;
+    border-color: #c98f5f;
+}
+
+#working .mul-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#working  .card-0{
+    background-color: rgb(247, 247, 247);
+    border: solid 0px #777;
+    border-radius: 8px;
+    margin-right: 3%;
+    padding: 2%;
+}
+#working  .card-1{
+    background-color: rgb(247, 247, 247);
+    border: solid 0px #777;
+    border-radius: 8px;
+    padding: 2%;
+}
+#working  .card-2{
+    background-color: rgb(247, 247, 247);
+    border: solid 0px #777;
+    border-radius: 8px;
+    margin-left: 3%;
+    padding: 2%;
+}
+#working .card-0:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.1);
+}
+#working .card-1:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.1);
+}
+#working .card-2:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.1);
+}
+
+#farm-house{
+    padding-top: 5%;
+    margin-top: 2%;
+    padding-left:  10%;
+    padding-right: 10%;
+    text-align: justify;
+    background-color:rgb(247, 247, 247) ;
+}
+#farm-house h1{
+    display: inline-block;
+    border-style:none none solid solid ;
+    border-width: 3px;
+}
+#farm-house p{
+    color: black;
+    font-size: 1rem;
+    padding: 2% 8%;
+    text-align: center;
+}
+
+#farm-house .farm-img {
+    display: grid;
+    gap: 1rem; 
+    grid-template-columns: repeat(2,1fr);
+    overflow: hidden;
+    
+}
+#farm-house .farm-img  img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+
+#farm-house .farm-img  div:nth-child(1){
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+#farm-house .farm-img div:nth-child(2){
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-row: span 2;
+    
+}
+#farm-house .farm-img div:nth-child(3){
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    
+}
+#farm-house .farm-img h3{
+    position:absolute;
+    visibility: hidden;   
+    color: #fff;
+    top: 0%;
+    padding: 0 20%;
+}
+#farm-house .farm-img h4{
+    position:absolute;
+    visibility: hidden;
+    color: #c98f5f;
+    top: 0%;
+    left: 15%;
+    padding: 0 20%;
+      
+
+}
+#farm-house .farm-img div:hover>img{
+    filter: brightness(30%);
+    transition: filter 500ms ease-in-out;
+} 
+
+#farm-house .farm-img div:hover> h3{
+    visibility: visible;
+    top: 50%;
+    transition: top 500ms ease-in-out;   
+}
+#farm-house .farm-img div:hover> h4{
+    visibility: visible;  
+    top: 60%;
+    transition: top 500ms ease-in-out;   
+} 
+#farm-house .modern-houses{
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0%;
+}
+#farm-house .modern-houses .mh1{
+    display: flex;
+    flex-direction: column;
+    padding-right:  2%; ; 
+}
+#farm-house .modern-houses .mh2{
+    display: flex;
+    flex-direction: column;
+     padding-left:  2%; ;
+}
+#farm-house .modern-houses img{
+    width: 100%;
+    padding: 2% 0%;
+}
+.modern-houses a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #c98f5f;
+    display: inline-block;
+    border-style:none none solid solid ;
+    border-width: 3px;
+    border-color: #c98f5f;
+}
+#farm-house .modern-houses .mh1:hover>img{
+    transform: scale(1.05);
+}
+#farm-house .modern-houses .mh2:hover>img{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 860px){
+    html,body{
+        overflow-x: hidden;  
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+    .hamburger{
+        display: flex;
+    }
+    
+    .nav-links{
+        position:absolute;
+        width: 0%;
+        height: 100vh; 
+        top: 0%;
+        right: 0%;
+        overflow: hidden;
+        background-color: rgb(247, 247, 247);
+        border-style: solid;
+        border: 2px;
+        border-color: black;
+        margin-top: 100px;
+        transition: width 400ms ease-in-out;
+         
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li{
+        padding: 3rem 1rem 3rem 1rem;  
+    }
+    .navbar{
+        position: fixed;
+        width: 100vw;
+        z-index: 1;
+        margin-bottom: 5%;
+    }
+    .nav-links.active{
+        display:flex;
+        position: fixed;
+        width:40%;
+        transition: width 400ms ease-in-out; 
+    }
+    .hamburger.active > .mid-bar{
+        opacity: 0;
+        position: absolute;
+        left: -60px;
+        transition:  400ms ease-in-out;
+    }
+    .hamburger.active > .top-bar{
+        transform: rotate(45deg) translateY(12px);
+        transition: transform 500ms ease-in-out;
+    }
+    .hamburger.active > .last-bar{
+        transform: rotate(-45deg) translateY(-12px);
+        transition: transform 500ms ease-in-out;
+    }
+    .hamburger > .mid-bar{
+        opacity: 1;
+        position: relative;
+        left: 0px;
+        transition:  400ms ease-in-out;
+    }
+    .hamburger> .top-bar{
+        transform: rotate(0deg);
+        margin-top: 0px;
+        transition: transform 500ms ease-in-out;
+    }
+    .hamburger > .last-bar{
+        transform: rotate(0deg);
+        margin-bottom: 0px;
+        transition: transform 500ms ease-in-out;
+    }
+    #company-title{
+        padding-top: 50%;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    #about{
+        padding-left:  1%; ;
+        padding-right:  1%; ;
+    }
+    #about div{
+        padding: 10px 1%;
+    }
+    .sec-container{
+        flex-direction: column;
+        place-items: center;
+    }
+    .sec-container img {
+        width: 60%;
+        height: 50%;   
+    }
+
+    #working .mul-cards{
+        flex-direction: column;
+    }
+    #working  .card-0{
+        margin-bottom: 3%;
+    }
+    #working  .card-2{
+        margin-top: 3%;
+    }
+
+    #farm-house .farm-img div:nth-child(1){
+        grid-column: span 2;
+
+    }
+    #farm-house .farm-img div:nth-child(3){
+        grid-column: span 2;
+    }
+    #farm-house .farm-img div:nth-child(2){
+        grid-column: span 2;
+    }
+    #farm-house .farm-img h3{
+        font-size: smaller;
+    }
+    #farm-house .farm-img h4{
+        font-size: smaller;
+    }
+    #farm-house .modern-houses{
+        flex-direction: column;
+    }
+    #farm-house .modern-houses h3{
+        font-size: smaller;
+    }
+
+}
